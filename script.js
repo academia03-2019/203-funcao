@@ -39,8 +39,33 @@ let filmes=[
   /* 1 */{titulo:"Chureki", classificacao: 0},
   /* 2 */{titulo:"Ninja Assassino", classificacao: 18}
 ]
+
+let idade = prompt("Digite sua idade: ");
+
+console.log("SOLUÇAO COM FOR ... IN");
+console.log("-----------------");
+
+for(let i in filmes){
+  if(idade >= filmes[i].classificacao){
+    console.log(filmes[i].titulo);
+  }
+}
+console.log("-----------------");
+
+console.log("SOLUÇAO COM FOR ... OF");
+console.log("-----------------");
+
+for(let j of filmes){
+  if(idade >= j.classificacao){
+    console.log(j.titulo);
+  }
+}
+
+
+
+
 // COMO ACESSAR OBJETO NA LISTA
-filmes[0].classificacao
+// filmes[0].classificacao
 
 /* QUAL É A SUA IDADE? 
   condição se a idada for menor ou igual classificacao,
